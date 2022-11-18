@@ -1,0 +1,122 @@
+.book {
+	max-width: 339px;
+}
+
+.imageWrap {
+	max-width: 339px;
+	max-height: 540px;
+	position: relative;
+}
+
+.image {
+	width: 100%;
+	cursor: pointer;
+}
+
+.soonImage {
+	position: absolute;
+	border-radius: 50%;
+	top: -20px;
+	right: -20px;
+	padding: 3px;
+	background-color: #fff;
+	box-shadow: 0 0 1px #959595;
+}
+
+.title {
+	max-width: 339px;
+	padding: 0;
+	margin: 24px 0 13px 0;
+	font-family: 'Raleway-Bold', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 33px;
+	color: #494949;
+}
+
+.book:hover .title {
+	color: #bd6d6e;
+}
+
+.author {
+	max-width: 339px;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.author span {
+	font-size: 16px;
+	line-height: 21px;
+	color: #616161;
+}
+
+@media screen and (max-width: 1190px) {
+	.book {
+		margin-right: 40px;
+	}
+
+	.book:last-child {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	.book {
+		max-width: 179px;
+	}
+
+	.imageWrap {
+		max-width: 179px;
+	}
+
+	.soonImage {
+		width: 28%;
+		top: -15px;
+		right: -15px;
+	}
+
+	.title {
+		margin: 16px 0 8px 0;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.author {
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.book {
+		max-width: 150px;
+	}
+
+	.imageWrap {
+		width: 150px;
+	}
+
+	.title {
+		margin: 5px 0 13px 0;
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.author {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.author span {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}

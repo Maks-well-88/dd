@@ -1,0 +1,184 @@
+.contactsPage {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 31px 50px 0 50px;
+}
+
+.contactsSection {
+	min-height: 190px;
+	margin-top: 59px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.text {
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.sectionTitle {
+	margin: 0 85px 0 0;
+	padding: 0;
+	font-family: 'RubikDirt-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+	color: #bd6d6e;
+}
+
+.contactsWrapper {
+	margin-top: 4px;
+	display: flex;
+	flex-direction: row;
+}
+
+.phoneWrapper {
+	margin-right: 140px;
+}
+
+.contactTitle {
+	margin: 0 0 6px 0;
+	composes: text;
+	font-size: 16px;
+	line-height: 32px;
+	font-feature-settings: 'pnum' on, 'lnum' on, 'salt' on, 'liga' off;
+	color: #616161;
+}
+
+.contact {
+	composes: text;
+	font-size: 16px;
+	line-height: 32px;
+	font-feature-settings: 'pnum' on, 'lnum' on, 'salt' on, 'liga' off;
+	color: #000000;
+	margin-left: 13px;
+}
+
+.vacancyWrapper {
+	margin: 55px 0 106px 0;
+	padding: 0;
+}
+
+.vacancy {
+	margin-top: 20px;
+	list-style-type: none;
+	width: 100%;
+	min-height: 259px;
+	border: 2px solid #bdc87a;
+	border-radius: 20px;
+	padding: 38px;
+	box-sizing: border-box;
+}
+
+.vacancyHeading {
+	font-family: 'Raleway-Bold';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 33px;
+	color: #494949;
+}
+
+.vacancyText {
+	composes: text;
+	font-size: 16px;
+	line-height: 23px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+	margin: 0;
+}
+
+.sendButton {
+	width: 175px;
+	height: 51px;
+	background: #bdc87a;
+	border: none;
+	border-radius: 10px;
+	composes: text;
+	font-size: 16px;
+	line-height: 21px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+	margin-top: 25px;
+}
+
+.sendButton:hover {
+	background: #d9e788;
+}
+
+@media screen and (max-width: 1160px) {
+	.contactsPage {
+		max-width: 620px;
+	}
+
+	.contactsSection {
+		min-height: 160px;
+		margin-top: 52px;
+	}
+
+	.jobSection {
+		margin-top: 75px;
+	}
+
+	.vacancyWrapper {
+		margin-top: 28px;
+		margin-bottom: 90px;
+	}
+
+	.vacancyText {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@media screen and (max-width: 665px) {
+	.sectionTitle {
+		font-size: 33px;
+		line-height: 33px;
+	}
+
+	.vacancyHeading {
+		margin-top: 10px;
+	}
+
+	.contactsSection {
+		margin-top: 13px;
+		flex-direction: column;
+	}
+
+	.contactsWrapper {
+		margin-top: 0;
+		flex-direction: column;
+	}
+
+	.phoneWrapper {
+		margin-top: 30px;
+	}
+
+	.emailWrapper {
+		margin-top: 20px;
+	}
+
+	.jobSection {
+		margin-top: 55px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.contactsPage {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.sectionTitle {
+		font-size: 25px;
+	}
+
+	.vacancyHeading {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 23px;
+	}
+}

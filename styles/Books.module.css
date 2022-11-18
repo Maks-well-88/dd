@@ -1,0 +1,91 @@
+.books {
+	max-width: 1180px;
+	min-height: 100vh;
+	margin: 70px auto 100px auto;
+	padding: 0 50px;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.booksContainer {
+	display: grid;
+	grid-template: auto / repeat(4, 1fr);
+	gap: 40px;
+}
+
+.title {
+	font-family: 'RubikDirt-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	color: #bd6d6e;
+}
+
+.description {
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #000000;
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1160px) {
+	.books {
+		max-width: 620px;
+	}
+
+	.title {
+		font-size: 35px;
+	}
+
+	.description {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.booksContainer {
+		grid-template: auto / repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.title {
+		font-size: 28px;
+	}
+
+	.description {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.booksContainer {
+		grid-template: auto / repeat(2, 1fr);
+		justify-items: center;
+		gap: 40px 0;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.books {
+		max-width: 320px;
+		padding: 0 20px;
+	}
+
+	.booksContainer {
+		max-width: 320px;
+		gap: 30px 15px;
+	}
+
+	.title {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}

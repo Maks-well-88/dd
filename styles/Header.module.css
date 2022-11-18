@@ -1,0 +1,125 @@
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 40px 50px 0 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.text {
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+}
+
+.navIcon {
+	display: none;
+}
+
+.navigation {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.navigationItem {
+	cursor: pointer;
+	list-style-type: none;
+	composes: text;
+	font-size: 18px;
+	line-height: 23px;
+	margin-right: 55px;
+	position: relative;
+}
+
+.navigationItem:hover::after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	left: 0;
+	right: 0;
+	top: 25px;
+	background-color: #000000;
+}
+
+.navigationItem:last-of-type {
+	margin-right: 25px;
+}
+
+.navigationLink {
+	text-decoration: none;
+	color: #000000;
+}
+
+.contacts {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.telephone {
+	cursor: pointer;
+	composes: text;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	font-size: 20px;
+	line-height: 26px;
+	margin-right: 34px;
+}
+
+.social {
+	composes: contacts;
+}
+
+.socialItem {
+	cursor: pointer;
+	list-style-type: none;
+	margin-right: 13px;
+}
+
+.socialItem:last-of-type {
+	margin-right: 0;
+}
+
+.socialLink {
+	text-decoration: none;
+	height: 24px;
+	display: flex;
+	align-items: center;
+}
+
+.ourChannel {
+	composes: text;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	font-size: 16px;
+	line-height: 21px;
+	margin-left: 8px;
+}
+
+@media screen and (max-width: 1160px) {
+	.container {
+		max-width: 620px;
+		padding-top: 43px;
+	}
+
+	.navIcon {
+		display: block;
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.telephone {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.container {
+		padding: 20px 20px 0 20px;
+	}
+}

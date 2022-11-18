@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url('../fonts/Raleway-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-Medium';
+	src: url('../fonts/Raleway-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-Bold';
+	src: url('../fonts/Raleway-Bold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RubikDirt-Regular';
+	src: url('../fonts/RubikDirt-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+.App {
+	width: 100%;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+@media screen and (min-width: 1160px) {
+	.App_background_image {
+		background-image: url(../public/images/bg.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	.App_background_image {
+		background-image: url(../public/images/bg-tablet.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+}
+
+@media screen and (max-width: 496px) {
+	.App_background_image {
+		background-image: url(../public/images/bg-mobile.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+}

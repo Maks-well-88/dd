@@ -1,0 +1,395 @@
+.bookDetails {
+	max-width: 1180px;
+	min-height: 70vh;
+	margin: 0 auto;
+	padding: 40px 50px;
+}
+
+.link {
+	text-decoration: none;
+	margin: 0;
+}
+
+.bookDetailsWrapper {
+	display: flex;
+}
+
+.imageContainer {
+	width: 380px;
+	margin-right: 122px;
+	position: relative;
+}
+
+.image {
+	cursor: pointer;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+}
+
+.image:hover {
+	opacity: 0.8;
+}
+
+.soonImage {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: #fff;
+	box-shadow: 0 0 1px #959595;
+}
+
+.bookDescription {
+	max-width: 580px;
+}
+
+.title {
+	margin: 20px 0 30px 0;
+	font-family: 'RubikDirt-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+	color: #bdc87a;
+}
+
+.author {
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.author span {
+	font-size: 16px;
+	line-height: 21px;
+	color: #616161;
+}
+
+.annotation {
+	margin: 30px 0;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	color: #000000;
+}
+
+.prices {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.buttonWrapper {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonKonzeptual {
+	margin: 0;
+	background: #bdc87a;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonWildberries {
+	margin: 0;
+	background: #cdadd4;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonOzon {
+	margin: 0;
+	background: #a0bddf;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonVkontakte {
+	margin: 0;
+	background: #f1e1d1;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonKonzeptual:hover {
+	background: #d9e788;
+}
+
+.buttonWildberries:hover {
+	background: #e8c9ef;
+}
+
+.buttonOzon:hover {
+	background: #b6d6fc;
+}
+
+.buttonVkontakte:hover {
+	background: #ffe9d2;
+}
+
+.price {
+	margin-top: 9px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+}
+
+.afterDescriptionPricesWrapper {
+	display: none;
+}
+
+.teachWrapper {
+	margin: 60px 0;
+	max-width: 1180px;
+	min-height: 175px;
+	background: #f3f9d0;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.mainTeach {
+	font-family: 'Raleway-Bold', Arial, sans-serif;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 39px;
+	color: #494949;
+	margin: 0 0 0 20px;
+}
+
+.teachDescription {
+	max-width: 749px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	color: #000000;
+	margin: 0;
+}
+
+.headVideo {
+	margin: 0 0 50px 0;
+	font-family: 'RubikDirt-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	color: #bd6d6e;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 80px;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-width: 0;
+	outline-width: 0;
+}
+
+@media screen and (max-width: 1160px) {
+	.bookDetails {
+		max-width: 620px;
+		padding-top: 80px;
+	}
+
+	.imageContainer {
+		width: 200px;
+		margin-right: 20px;
+	}
+
+	.soonImage {
+		width: 25%;
+		top: -20px;
+		right: -13px;
+	}
+
+	.bookDescription {
+		max-width: 387px;
+	}
+
+	.title {
+		margin: 0;
+		font-size: 25px;
+		line-height: 33px;
+	}
+
+	.author {
+		font-size: 16px;
+	}
+
+	.author span {
+		font-size: 14px;
+	}
+
+	.annotation {
+		margin-top: 21px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.descriptionPricesWrapper {
+		display: none;
+	}
+
+	.afterDescriptionPricesWrapper {
+		display: block;
+		margin-top: 25px;
+	}
+
+	.teachWrapper {
+		margin: 40px 0 15px 0;
+		min-height: 100px;
+		flex-direction: column;
+		align-items: start;
+		padding: 30px 20px;
+	}
+
+	.mainTeach {
+		margin: 0 0 10px 0;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.teachDescription {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.video {
+		margin-bottom: 50px;
+	}
+
+	.headVideo {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 665px) {
+	.bookDetails {
+		padding: 50px 20px 10px 20px;
+		max-width: 320px;
+	}
+
+	.bookDetailsWrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.soonImage {
+		width: 28%;
+		top: -18px;
+		right: -18px;
+	}
+
+	.title {
+		margin-top: 20px;
+	}
+
+	.author {
+		margin-top: 10px;
+	}
+
+	.annotation {
+		margin: 20px 0 10px 0;
+	}
+
+	.afterDescriptionPricesWrapper {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.prices {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.buttonWrapper {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 9px;
+	}
+
+	.buttonWrapper p {
+		width: 200px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.price {
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0 0 0 18px;
+	}
+
+	.headVideo {
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+}

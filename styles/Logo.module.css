@@ -1,0 +1,38 @@
+.position_header {
+	width: 145px;
+	height: 145px;
+}
+
+.position_menu {
+	width: 131px;
+	height: 131px;
+}
+
+.position_main {
+	display: none;
+}
+
+@media screen and (max-width: 1160px) {
+	.position_header {
+		width: 91px;
+		height: 91px;
+		position: absolute;
+		top: 14px;
+		right: 43.8%;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.position_header {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 496px) {
+	.position_main {
+		display: block;
+		margin-top: 29px;
+		width: 131px;
+		height: 131px;
+	}
+}

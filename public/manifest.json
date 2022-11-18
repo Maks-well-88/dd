@@ -1,0 +1,26 @@
+{
+  "short_name": "Доброе детство",
+  "name": "Доброе детство",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#BD6D6E",
+  "background_color": "#ffffff",
+  "description": "Проект для повышения осознанности общества в деле воспитания детей. Издаем развивающие детские книги, разбираем воспитательные посылы популярных медиа-продуктов, проводим вебинары и форумы по актуальным темам воспитания детей"
+}
