@@ -13,13 +13,6 @@ const NotFound = () => {
 					name='description'
 					content='К сожалению, такой страницы нет на нашем сайте. Возможно, вы ввели неправильный адрес или страница была удалена с сервера.'
 				/>
-				<meta property='og:title' content='Ошибка 404 | Страница не найдена' />
-				<meta
-					property='og:description'
-					content='К сожалению, такой страницы нет на нашем сайте. Возможно, вы ввели неправильный адрес или страница была удалена с сервера.'
-				/>
-				<meta property='og:type' content='website' />
-				<meta property='og:image' content={alas} />
 				<meta name='robots' content='noindex' />
 				<title>Ошибка 404 | Страница не найдена</title>
 			</Head>

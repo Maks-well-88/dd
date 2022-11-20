@@ -1,0 +1,136 @@
+.prices {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.link {
+	text-decoration: none;
+	margin: 0;
+}
+
+.buttonWrapper {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonKonzeptual {
+	margin: 0;
+	background: #bdc87a;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonWildberries {
+	margin: 0;
+	background: #cdadd4;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonOzon {
+	margin: 0;
+	background: #a0bddf;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonVkontakte {
+	margin: 0;
+	background: #f1e1d1;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.3s ease;
+}
+
+.buttonKonzeptual:hover {
+	background: #d9e788;
+}
+
+.buttonWildberries:hover {
+	background: #e8c9ef;
+}
+
+.buttonOzon:hover {
+	background: #b6d6fc;
+}
+
+.buttonVkontakte:hover {
+	background: #ffe9d2;
+}
+
+.price {
+	margin-top: 9px;
+	font-family: 'Raleway-Regular', Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	color: #000000;
+}
+
+@media screen and (max-width: 665px) {
+	.prices {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.buttonWrapper {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 9px;
+	}
+
+	.buttonWrapper p {
+		width: 200px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.price {
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0 0 0 18px;
+	}
+}

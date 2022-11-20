@@ -3,22 +3,12 @@ import Link from 'next/link';
 import { Book } from '../../components/Book';
 import style from '../../styles/Books.module.css';
 
-export const getServerSideProps = () => {
-	return fetch('https://632054139f82827dcf2a1cca.mockapi.io/bookz')
-		.then(res => {
-			return res.ok ? res.json() : Promise.reject(`Ошибка ${res.status}`);
-		})
-		.then(data => {
-			if (!data) {
-				return {
-					notFound: true,
-				};
-			}
-			return {
-				props: { books: data },
-			};
-		})
-		.catch(err => console.error(err));
+export const getServerSideProps = async () => {
+	const res = await fetch('https://632054139f82827dcf2a1cca.mockapi.io/bookz');
+	const data = await res.json();
+	return {
+		props: { books: data },
+	};
 };
 
 const Books = ({ books }) => {
@@ -49,9 +39,9 @@ const Books = ({ books }) => {
 					которые они испытывают. Это один из&nbsp;самых важных моментов для детской иллюстрации.
 				</p>
 				<div className={style.booksContainer}>
-					{books.map(item => (
-						<Link className={style.link} key={item.id} href={`/books/${item.id}`}>
-							<Book {...item} />
+					{books.map(book => (
+						<Link className={style.link} key={book.id} href={`/books/${book.id}`}>
+							<Book {...book} />
 						</Link>
 					))}
 				</div>

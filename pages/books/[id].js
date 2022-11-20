@@ -1,47 +1,26 @@
+import { useContext } from 'react';
 import Head from 'next/head';
 import style from '../../styles/BookDetails.module.css';
 import Soon from '../../public/images/soon.svg';
+import Image from 'next/image';
+import BuyButtons from '../../components/BuyButtons';
+import { ImageContext } from '../../contexts/ImageContext';
+import ImagesCarousel from '../../components/ImagesCarousel';
 
-export const getServerSidePaths = () => {
-	const data = fetch('https://632054139f82827dcf2a1cca.mockapi.io/bookz')
-		.then(res => {
-			return res.ok ? res.json() : Promise.reject(`Ошибка ${res.status}`);
-		})
-		.then(data => ({ props: { books: data } }))
-		.catch(err => console.error(err));
-
-	const paths = data.map(book => ({
-		params: { id: book.id },
-	}));
-
-	return {
-		paths,
-		fallback: false,
-	};
-};
-
-export const getServerSideProps = context => {
+export const getServerSideProps = async context => {
 	const id = context.params.id;
+	const res = await fetch(`https://632054139f82827dcf2a1cca.mockapi.io/bookz/${id}`);
+	const data = await res.json();
 
-	return fetch(`https://632054139f82827dcf2a1cca.mockapi.io/bookz/${id}`)
-		.then(res => {
-			return res.ok ? res.json() : Promise.reject(`Ошибка ${res.status}`);
-		})
-		.then(data => ({ props: { book: data } }))
-		.catch(err => {
-			console.error(err);
-			return { notFound: true };
-		});
+	if (res.ok) {
+		return { props: { book: data } };
+	} else {
+		return { notFound: true };
+	}
 };
 
 const BookDetails = ({ book }) => {
-	// const booksListData = useContext(BooksListContext);
-	// const id = useParams();
-	// const book = name();
-
-	// function name() {
-	// 	return booksListData.books.length && booksListData.books.find(item => item.link_param === id.name);
-	// }
+	const setPopupState = useContext(ImageContext);
 
 	return (
 		<>
@@ -63,12 +42,11 @@ const BookDetails = ({ book }) => {
 					<div
 						className={style.imageContainer}
 						onClick={() => {
-							booksListData.setPopupOpen(true);
-							booksListData.setBookImage(book.image);
+							setPopupState({ isOpen: true, content: book.image });
 						}}
 					>
 						<img className={style.image} src={book.image} alt={book.title} />
-						{!book.on_sale && <img className={style.soonImage} src={Soon} alt='Скоро' />}
+						{!book.on_sale && <Image className={style.soonImage} src={Soon} alt='Скоро' />}
 					</div>
 					<div className={style.bookDescription}>
 						<h1 className={style.title}>{book.title}</h1>
@@ -79,71 +57,21 @@ const BookDetails = ({ book }) => {
 						<p className={style.annotation}>{book.annotation}</p>
 						{book.on_sale && (
 							<div className={style.descriptionPricesWrapper}>
-								<ul className={style.prices}>
-									<li className={style.buttonWrapper}>
-										<a className={style.link} href={book.konz_href} target='_blank' rel='noreferrer'>
-											<p className={style.buttonKonzeptual}>Купить в &laquo;Концептуале&raquo;</p>
-										</a>
-										<span className={style.price}>{book.konz_price} руб.</span>
-									</li>
-									<li className={style.buttonWrapper}>
-										<a className={style.link} href={book.wb_href} target='_blank' rel='noreferrer'>
-											<p className={style.buttonWildberries}>Wildberries</p>
-										</a>
-										<span className={style.price}>{book.wb_price} руб.</span>
-									</li>
-									<li className={style.buttonWrapper}>
-										<a className={style.link} href={book.ozon_href} target='_blank' rel='noreferrer'>
-											<p className={style.buttonOzon}>Ozon</p>
-										</a>
-										<span className={style.price}>{book.ozon_price} руб.</span>
-									</li>
-									<li className={style.buttonWrapper}>
-										<a className={style.link} href={book.vk_href} target='_blank' rel='noreferrer'>
-											<p className={style.buttonVkontakte}>ВКонтакте</p>
-										</a>
-										<span className={style.price}>{book.vk_price} руб.</span>
-									</li>
-								</ul>
+								<BuyButtons book={book} />
 							</div>
 						)}
 					</div>
 				</div>
 				{book.on_sale && (
 					<div className={style.afterDescriptionPricesWrapper}>
-						<ul className={style.prices}>
-							<li className={style.buttonWrapper}>
-								<a className={style.link} href={book.konz_href} target='_blank' rel='noreferrer'>
-									<p className={style.buttonKonzeptual}>Купить в &laquo;Концептуале&raquo;</p>
-								</a>
-								<span className={style.price}>{book.konz_price} руб.</span>
-							</li>
-							<li className={style.buttonWrapper}>
-								<a className={style.link} href={book.wb_href} target='_blank' rel='noreferrer'>
-									<p className={style.buttonWildberries}>Wildberries</p>
-								</a>
-								<span className={style.price}>{book.wb_price} руб.</span>
-							</li>
-							<li className={style.buttonWrapper}>
-								<a className={style.link} href={book.ozon_href} target='_blank' rel='noreferrer'>
-									<p className={style.buttonOzon}>Ozon</p>
-								</a>
-								<span className={style.price}>{book.ozon_price} руб.</span>
-							</li>
-							<li className={style.buttonWrapper}>
-								<a className={style.link} href={book.vk_href} target='_blank' rel='noreferrer'>
-									<p className={style.buttonVkontakte}>ВКонтакте</p>
-								</a>
-								<span className={style.price}>{book.vk_price} руб.</span>
-							</li>
-						</ul>
+						<BuyButtons book={book} />
 					</div>
 				)}
 				<div className={style.teachWrapper}>
 					<p className={style.mainTeach}>Научит ребёнка</p>
 					<p className={style.teachDescription}>{book.teach}</p>
 				</div>
-				{/* <ImagesCarousel book={book} /> */}
+				<ImagesCarousel book={book} />
 				{book.has_video && (
 					<>
 						<h2 className={style.headVideo}>Видео о книге</h2>
