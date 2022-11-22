@@ -26,14 +26,14 @@ const BookDetails = ({ book }) => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href={`/books/${book.link_param}`} />
+				<link rel='canonical' href={`/books/${book.id}`} />
 				<meta name='description' content={`${book.annotation}`.slice(0, 165) + '...'} />
 				<meta name='keywords' content='доброе детство, добрая книга, книга, купить' />
 				<meta property='og:title' content={`${book.title}`} />
 				<meta property='og:description' content={`${book.annotation}`} />
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content={book.image} />
-				<meta property='og:url' content={`https://dobroedetstvo.ru/books/${book.link_param}`} />
+				<meta property='og:url' content={`https://dobroedetstvo.ru/books/${book.id}`} />
 				<title>{book.title}</title>
 			</Head>
 
