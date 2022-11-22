@@ -29,7 +29,7 @@ const Home = ({ books }) => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href='/' />
+				<link rel='canonical' href='https://dd-beryl.vercel.app/' />
 				<meta
 					name='description'
 					content='Проект для повышения осознанности общества в деле воспитания детей. Издаем развивающие детские книги, разбираем воспитательные посылы популярных медиа-продуктов.'

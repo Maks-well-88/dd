@@ -11,7 +11,7 @@ const Contacts = () => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href='/contacts' />
+				<link rel='canonical' href='https://dd-beryl.vercel.app/contacts' />
 				<meta
 					name='description'
 					content='Если вы детский писатель или художник и хотите стать частью нашей команды, обязательно свяжитесь с нами по телефону или email.'

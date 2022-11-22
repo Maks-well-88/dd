@@ -33,7 +33,7 @@ const BookDetails = ({ book }) => {
 				<meta property='og:description' content={`${book.annotation}`} />
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content={book.image} />
-				<meta property='og:url' content={`https://dobroedetstvo.ru/books/${book.id}`} />
+				<meta property='og:url' content={`https://dd-beryl.vercel.app/books/${book.id}`} />
 				<title>{book.title}</title>
 			</Head>
 

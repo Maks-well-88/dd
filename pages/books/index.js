@@ -16,7 +16,7 @@ const Books = ({ books }) => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href='/books' />
+				<link rel='canonical' href='https://dd-beryl.vercel.app/books' />
 				<meta
 					name='description'
 					content='Ассортимент детских книг издательства «Доброе детство». Самые выгодные цены. Заказывайте онлайн и выбирайте удобный способ доставки.'
