@@ -11,7 +11,7 @@ const Contacts = () => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href='https://dd-beryl.vercel.app/contacts' />
+				<link rel='canonical' href='https://www.dobroedetstvo.ru/contacts' />
 				<meta
 					name='description'
 					content='Если вы детский писатель или художник и хотите стать частью нашей команды, обязательно свяжитесь с нами по телефону или email.'
@@ -27,7 +27,7 @@ const Contacts = () => {
 				/>
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content={ogImage} />
-				<meta property='og:url' content='https://dobroedetstvo.ru/contacts' />
+				<meta property='og:url' content='https://www.dobroedetstvo.ru/contacts' />
 				<title>Контакты | «Доброе детство»</title>
 			</Head>
 
