@@ -29,7 +29,7 @@ const Home = ({ books }) => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href='https://www.dobroedetstvo.ru/' />
+				<link rel='canonical' href='https://dobroedetstvo.ru/' />
 				<meta
 					name='description'
 					content='Проект для повышения осознанности общества в деле воспитания детей. Издаем развивающие детские книги, разбираем воспитательные посылы популярных медиа-продуктов.'
@@ -45,7 +45,7 @@ const Home = ({ books }) => {
 				/>
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content='../public/ogg.png' />
-				<meta property='og:url' content='https://www.dobroedetstvo.ru/' />
+				<meta property='og:url' content='https://dobroedetstvo.ru/' />
 				<title>Издательство «Доброе детство»</title>
 			</Head>
 

@@ -16,7 +16,7 @@ const Books = ({ books }) => {
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='canonical' href='https://www.dobroedetstvo.ru/books' />
+				<link rel='canonical' href='https://dobroedetstvo.ru/books' />
 				<meta
 					name='description'
 					content='Ассортимент детских книг издательства «Доброе детство». Самые выгодные цены. Заказывайте онлайн и выбирайте удобный способ доставки.'
@@ -26,7 +26,7 @@ const Books = ({ books }) => {
 				<meta property='og:description' content='Книжный ассортимент издательства по самым выгодным ценам.' />
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content='../public/ogg.png' />
-				<meta property='og:url' content='https://www.dobroedetstvo.ru/books' />
+				<meta property='og:url' content='https://dobroedetstvo.ru/books' />
 				<title>Книги | «Доброе детство»</title>
 			</Head>
 
