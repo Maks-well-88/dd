@@ -9,7 +9,7 @@ import ImagesCarousel from '../../components/ImagesCarousel';
 
 export const getServerSideProps = async context => {
 	const id = context.params.id;
-	const res = await fetch(`https://632054139f82827dcf2a1cca.mockapi.io/bookz/${id}`);
+	const res = await fetch(`https://632054139f82827dcf2a1cca.mockapi.io/books/${id}`);
 	const data = await res.json();
 
 	if (res.ok) {

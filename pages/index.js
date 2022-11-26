@@ -7,7 +7,7 @@ import { peculiaritiesData } from '../utils/constants';
 import { Book } from '../components/Book';
 
 export const getServerSideProps = () => {
-	return fetch('https://632054139f82827dcf2a1cca.mockapi.io/bookz')
+	return fetch('https://632054139f82827dcf2a1cca.mockapi.io/books')
 		.then(res => {
 			return res.ok ? res.json() : Promise.reject(`Ошибка ${res.status}`);
 		})

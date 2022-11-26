@@ -4,7 +4,7 @@ import { Book } from '../../components/Book';
 import style from '../../styles/Books.module.css';
 
 export const getServerSideProps = async () => {
-	const res = await fetch('https://632054139f82827dcf2a1cca.mockapi.io/bookz');
+	const res = await fetch('https://632054139f82827dcf2a1cca.mockapi.io/books');
 	const data = await res.json();
 	return {
 		props: { books: data },
