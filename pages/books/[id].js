@@ -81,7 +81,7 @@ const BookDetails = ({ book }) => {
 								width='100%'
 								height='664px'
 								src={book.video}
-								allow='accelerometer; autoplay; clipboard-write; fullscreen; encrypted-media; gyroscope; picture-in-picture'
+								allow='accelerometer; clipboard-write; fullscreen; encrypted-media; gyroscope; picture-in-picture'
 							></iframe>
 						</div>
 					</>

@@ -82,7 +82,7 @@ const Home = ({ books }) => {
 							src='https://www.youtube-nocookie.com/embed/videoseries?list=PLi6aBhEuWKGOuI9HG_K2nEqR7GfuB59sL'
 							width='100%'
 							height='664px'
-							allow='autoplay; encrypted-media; clipboard-write; fullscreen; gyroscope; picture-in-picture;'
+							allow='encrypted-media; clipboard-write; fullscreen; gyroscope; picture-in-picture;'
 						></iframe>
 					</div>
 				</section>
