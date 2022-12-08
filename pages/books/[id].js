@@ -76,15 +76,12 @@ const BookDetails = ({ book }) => {
 					<>
 						<h2 className={style.headVideo}>Видео о книге</h2>
 						<div id='video' className={style.video}>
-							<div id='my_playlist'></div>
-							<div id='vk_playlist_-147845620_5'></div>
-							<div id='vk_playlist_-147845620_508'></div>
 							<iframe
-								title='Видео о книге'
-								src='https://vk.com/video_ext.php?oid=-136337801&id=456239473&hash=160120364c694f2f&hd=2'
+								title={book.title}
 								width='100%'
 								height='664px'
-								allow='autoplay; encrypted-media; fullscreen; picture-in-picture;'
+								src={book.video}
+								allow='accelerometer; autoplay; clipboard-write; fullscreen; encrypted-media; gyroscope; picture-in-picture'
 							></iframe>
 						</div>
 					</>
