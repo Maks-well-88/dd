@@ -6,6 +6,8 @@ import '../styles/globals.css';
 import { ImageContext } from '../contexts/ImageContext';
 import PopupWithImage from '../components/PopupWithImage';
 import Widget from '../components/Widget';
+import Router from 'next/router';
+import withYM from 'next-ym';
 
 function App({ Component, pageProps }) {
 	const [menuActive, setMenuActive] = useState(false);
@@ -29,4 +31,4 @@ function App({ Component, pageProps }) {
 	);
 }
 
-export default App;
+export default withYM(90529306, Router)(App);
